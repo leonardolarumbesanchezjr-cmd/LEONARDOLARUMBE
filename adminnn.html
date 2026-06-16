@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Recipe Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    
+    <aside class="sidebar">
+      <div class="logo">FOOD</div>
+      
+      <div class="profile-card">
+        <div class="avatar-container">
+          <img src="c:\Users\Acer Aspire 3\Downloads\avatar.jpg" alt="Kristin Watson" class="profile-avatar">
+        </div>
+        <h3 class="profile-name">Kristin Watson</h3>
+        <p class="profile-role">Chef de partie</p>
+        <div class="notification-badge">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span>37</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">
+          <i class="fa-solid fa-book-open nav-icon"></i> Recipes
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-regular fa-heart nav-icon"></i> Favorites
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-briefcase nav-icon"></i> Courses
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-globe nav-icon"></i> Community
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      
+      <header class="top-bar">
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Enter your search request...">
+        </div>
+        
+        <div class="top-right-actions">
+          <button class="grid-toggle-btn">
+            <i class="fa-solid fa-table-cells-large"></i>
+          </button>
+          <button class="premium-btn">Go to Premium</button>
+        </div>
+      </header>
+
+      <section class="hero-section">
+        <div class="welcome-badge">
+          <img src="c:\Users\Acer Aspire 3\Downloads\chef1.png" alt="Chef Icon">
+        </div>
+        <div class="hero-text">
+          <h1>Only the best recipes!</h1>
+          <p>Today's new recipes for you</p>
+        </div>
+        <div class="stats-counter">
+          <div class="stat-item">
+            <span class="stat-number">168</span>
+            <span class="stat-label">Tutorials</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">304</span>
+            <span class="stat-label">Recipes</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\noodle.jpg" alt="Noodle Chicken soup" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Noodle Chicken soup</h4>
+            <span class="difficulty intermediate">Intermediate</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-drumstick-bite"></i><span>Meat</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card active-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\tuna salad.jpg" alt="Salad with raw tuna" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Salad with raw tuna</h4>
+            <span class="difficulty advanced">Advanced</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-fish"></i><span>Fish</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <button class="start-cooking-btn solid-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\pasta.jpg" alt="Pasta with spinach" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Pasta with spinach</h4>
+            <span class="difficulty beginner">Beginner</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-leaf"></i><span>Veg</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="mentorship-banner">
+          <span class="pro-tag">PRO</span>
+          <h3>Mentorship program</h3>
+          <p>A mentor will track your progress and give you tips for faster culinary growth.</p>
+          <div class="mentor-graphics">
+            <img src="c:\Users\Acer Aspire 3\Downloads\chef2.png" alt="Chef Mentor" class="mentor-img">
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\cucumber.jpg" alt="Cucumber salad" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Cucumber salad</h4>
+            <span class="difficulty advanced">Advanced</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-leaf"></i><span>Veg</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\sisig.png" alt="Sisig" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Sisig</h4>
+            <span class="difficulty beginner">Beginner</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-leaf"></i><span>Veg</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\pork.jpg" alt="Pork medallions" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Pork medallions</h4>
+            <span class="difficulty advanced">Advanced</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-drumstick-bite"></i><span>Meat</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\fruit.jpg" alt="Fruit bowl" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Fruit bowl</h4>
+            <span class="difficulty intermediate">Intermediate</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-apple-whole"></i><span>Fruit</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="floating-action-btn">
+        <i class="fa-solid fa-magnifying-glass-plus"></i>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Recipe Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    
+    <aside class="sidebar">
+      <div class="logo">FOOD</div>
+      
+      <div class="profile-card">
+        <div class="avatar-container">
+          <img src="c:\Users\Acer Aspire 3\Downloads\avatar.jpg" alt="Kristin Watson" class="profile-avatar">
+        </div>
+        <h3 class="profile-name">Kristin Watson</h3>
+        <p class="profile-role">Chef de partie</p>
+        <div class="notification-badge">
+          <i class="fa-solid fa-basket-shopping"></i>
+          <span>37</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active">
+          <i class="fa-solid fa-book-open nav-icon"></i> Recipes
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-regular fa-heart nav-icon"></i> Favorites
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-briefcase nav-icon"></i> Courses
+        </a>
+        <a href="#" class="nav-item">
+          <i class="fa-solid fa-globe nav-icon"></i> Community
+        </a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      
+      <header class="top-bar">
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" placeholder="Enter your search request...">
+        </div>
+        
+        <div class="top-right-actions">
+          <button class="grid-toggle-btn">
+            <i class="fa-solid fa-table-cells-large"></i>
+          </button>
+          <button class="premium-btn">Go to Premium</button>
+        </div>
+      </header>
+
+      <section class="hero-section">
+        <div class="welcome-badge">
+          <img src="c:\Users\Acer Aspire 3\Downloads\chef1.png" alt="Chef Icon">
+        </div>
+        <div class="hero-text">
+          <h1>Only the best recipes!</h1>
+          <p>Today's new recipes for you</p>
+        </div>
+        <div class="stats-counter">
+          <div class="stat-item">
+            <span class="stat-number">168</span>
+            <span class="stat-label">Tutorials</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">304</span>
+            <span class="stat-label">Recipes</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\noodle.jpg" alt="Noodle Chicken soup" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Noodle Chicken soup</h4>
+            <span class="difficulty intermediate">Intermediate</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-drumstick-bite"></i><span>Meat</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card active-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\tuna salad.jpg" alt="Salad with raw tuna" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Salad with raw tuna</h4>
+            <span class="difficulty advanced">Advanced</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-fish"></i><span>Fish</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <button class="start-cooking-btn solid-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\pasta.jpg" alt="Pasta with spinach" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Pasta with spinach</h4>
+            <span class="difficulty beginner">Beginner</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-leaf"></i><span>Veg</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="mentorship-banner">
+          <span class="pro-tag">PRO</span>
+          <h3>Mentorship program</h3>
+          <p>A mentor will track your progress and give you tips for faster culinary growth.</p>
+          <div class="mentor-graphics">
+            <img src="c:\Users\Acer Aspire 3\Downloads\chef2.png" alt="Chef Mentor" class="mentor-img">
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\cucumber.jpg" alt="Cucumber salad" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Cucumber salad</h4>
+            <span class="difficulty advanced">Advanced</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-leaf"></i><span>Veg</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\sisig.png" alt="Sisig" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Sisig</h4>
+            <span class="difficulty beginner">Beginner</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-leaf"></i><span>Veg</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\pork.jpg" alt="Pork medallions" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Pork medallions</h4>
+            <span class="difficulty advanced">Advanced</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-drumstick-bite"></i><span>Meat</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+        <div class="recipe-card">
+          <div class="recipe-img-container">
+            <img src="c:\Users\Acer Aspire 3\Downloads\fruit.jpg" alt="Fruit bowl" class="recipe-thumb">
+          </div>
+          <div class="recipe-details">
+            <h4 class="recipe-title">Fruit bowl</h4>
+            <span class="difficulty intermediate">Intermediate</span>
+            <div class="recipe-meta">
+              <div class="meta-item"><strong>25</strong><span>min</span></div>
+              <div class="meta-item"><strong>95</strong><span>Kcal</span></div>
+              <div class="meta-item"><i class="fa-solid fa-apple-whole"></i><span>Fruit</span></div>
+            </div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <button class="start-cooking-btn">Start cooking</button>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="floating-action-btn">
+        <i class="fa-solid fa-magnifying-glass-plus"></i>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
